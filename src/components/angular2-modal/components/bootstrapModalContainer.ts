@@ -18,8 +18,7 @@ import {ModalDialogInstance} from '../models/ModalDialogInstance';
     },
     /* tslint:disable */
     template:
-    `<div class="modal-dialog"
-         [class]="{'modal-' + dialogInstance.config.size: true}">
+    `<div class="modal-dialog modal-{{dialogInstance.config.size}}">
          <div class="modal-content" (click)="onContainerClick($event)" style="display: block">
             <div style="display: none" #modalDialog></div>
          </div>
