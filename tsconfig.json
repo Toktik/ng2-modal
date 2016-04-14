@@ -1,16 +1,21 @@
 {
-  "version": "1.5.0",
   "compilerOptions": {
-    "target": "ES5",
+    "noImplicitAny": true,
     "module": "commonjs",
-    "removeComments": true,
+    "target": "es5",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "noEmitHelpers": false,
-    "sourceMap": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "declaration": true,
+    "moduleResolution": "node",
     "noImplicitAny": false
   },
   "files": [
-    "typings/browser.d.ts"
+    "typings/browser.d.ts",
+    "angular2-modal.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
