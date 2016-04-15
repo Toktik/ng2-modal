@@ -31,11 +31,17 @@ export class ModalConfig {
      */
     keyboard: Array<number> | number;
 
+    /**
+     * Maximum height of modal content
+     */
+    maxHeight;
+
     constructor(size: string = null, isBlocking: boolean = null,
-                keyboard: Array<number> | number = undefined) {
+                keyboard: Array<number> | number = undefined, maxHeight: number = 350) {
         this.size = size;
         this.isBlocking = isBlocking;
         this.keyboard = keyboard;
+        this.maxHeight = maxHeight;
     }
 
     /**

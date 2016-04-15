@@ -23,7 +23,11 @@ export declare class ModalConfig {
      * Defaults to 27, set `null` implicitly to disable.
      */
     keyboard: Array<number> | number;
-    constructor(size?: string, isBlocking?: boolean, keyboard?: Array<number> | number);
+    /**
+     * Maximum height of modal content
+     */
+    maxHeight: any;
+    constructor(size?: string, isBlocking?: boolean, keyboard?: Array<number> | number, maxHeight?: number);
     /**
      * Makes a ModalConfig instance valdud.
      * @param config
